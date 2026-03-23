@@ -89,3 +89,27 @@
 width: 544px;
  }
 }
+/* RELAXING */
+.relax-section{
+    background-image: url("/img/relax/mob.png");
+        background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+}
+.relax-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+@media only screen and (min-width: 1440px) {
+.relax-section {
+        background-image: url("/img/relax/desk.png");
+    }
+
+    .relax-container {
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 130px;
+    }
+}
