@@ -113,3 +113,100 @@ width: 544px;
         gap: 130px;
     }
 }
+/* THINK AHEAD */
+.think-section{
+    background-image: url("/img/think/mob.png");
+            background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+}
+.think-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+@media only screen and (min-width: 1440px) {
+.think-section {
+        background-image: url("/img/think/desk.png");
+}
+.think-container {
+flex-direction: row;
+gap: 95px;
+}
+}
+/* COLORFUL VISUAL EXPERIENCE */
+.colorful-section{
+    background-image: url("/img/colorful/mob.png");
+                background-repeat: no-repeat;
+                    background-position: top center;
+                    background-size: cover;
+}
+.colorful-container{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+}
+@media only screen and (min-width: 1440px) {
+.colorful-section {
+        background-image: url("/img/colorful/desk.png");
+    }
+.colorful-container{
+    flex-direction: row-reverse;
+    gap: 96px;
+}
+.colorful-wrapper{
+    width: 550px;
+}
+}
+/* ENDLESS MERGE PROGRESSION */
+.endless-section{
+    background-image: url("/img/endless/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.endless-list{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.endless-item{
+    border: 8px solid #219ecd;
+        border-radius: 48px;
+        padding: 16px 10px;
+        width: 256px;
+        height: 256px;
+background: #aed7fd;
+font-family: "Rubik One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    -webkit-text-stroke: 1px #219ecd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desk{
+    display: none;
+}
+@media only screen and (min-width: 1440px) {
+.endless-section{
+    background-image: url("/img/endless/desk.png");
+}
+.desk {
+        display: block;
+    }
+.endless-list{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    flex-direction: row;
+    justify-content: center;
+}
+}
